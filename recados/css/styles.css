@@ -11,6 +11,10 @@ body {
   align-items: center;
 }
 
+.form-control{
+  background-color: #E5E5E5;
+}
+
 body,
 input,
 button,
