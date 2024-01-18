@@ -29,15 +29,21 @@
     </header>
 
     <main>
-      <form id="form-new-message">
+      <form class="was-validated" id="form-new-message">
         <div class="mb-3 form-control">
-          <label for="title" class="form-label">Título</label>
-          <input type="text" id="title" class="form-control" placeholder="Insira um título para o recado" />
+          <label for="validationInput" class="form-label">Título</label>
+          <input type="text" id="validationInput" class="form-control" placeholder="Insira um título para o recado" required/>
+          <div class="invalid-feedback">
+            Insira um título para o recado.
+          </div>
         </div>
 
         <div class="mb-3 form-control">
-          <label for="description" class="form-label">Descrição</label>
-          <textarea class="form-control"  type="text" id="description" placeholder="Insira uma descrição para o recado"></textarea>
+          <label for="validationTextarea" class="form-label">Descrição</label>
+          <textarea class="form-control" type="text" id="validationTextarea" placeholder="Insira uma descrição para o recado" required></textarea>
+          <div class="invalid-feedback">
+            Insira uma descrição para o recado.
+          </div>
         </div>
 
         <button class="btn-submit">Cadastrar Recado</button>
